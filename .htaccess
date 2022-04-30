@@ -17,7 +17,7 @@
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L].
+    RewriteRule ^index.php [L].
     
     # No access to public files
     <FilesMatch "(artisan|\.(bak|config|editorconfig|dist|env|env\.example|ini|log|sh|sql|swp)|~)$">
