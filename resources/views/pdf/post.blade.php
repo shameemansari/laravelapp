@@ -30,7 +30,7 @@
 
     <table width="100%">
         <tr>
-            <td valign="top"><img src="https://i.pravatar.cc/150?u=Jenifer%20Moore@pravatar.com" alt="Jenifer" />
+            <td valign="top"><img src="https://i.pravatar.cc/150?u=shameem@pravatar.com" alt="Jenifer" />
             </td>
             <td align="right">
                 <h3>Laravel Practise</h3>

@@ -79,6 +79,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::controller(PostController::class)->group(function () {
         Route::get('posts', 'index')->name('posts');
         Route::get('posts/create', 'create')->name('posts.create');
+        Route::get('posts/{post?}', 'show')->name('posts.show');
+        Route::get('posts/edit/{post?}', 'edit')->name('posts.edit');
+        Route::post('posts', 'store')->name('posts.store');
         Route::delete('posts/{post?}', 'delete')->name('posts.delete');
         Route::get('downloadPdf',  'downloadPdf')->name('downloadPdf');
         Route::get('downloadExcel',  'downloadExcel')->name('downloadExcel');

@@ -435,7 +435,7 @@
                     </ul>
                 </div>
             </header>
-            <main class="h-full bg-slate-200 dark:bg-gray-700 overflow-y-auto">
+            <main class="h-full bg-indigo-300 dark:bg-gray-700 overflow-y-auto">
                 <div class="container px-6 mx-auto grid">
                     @if (session()->has('status'))
                     <!-- Notification -->

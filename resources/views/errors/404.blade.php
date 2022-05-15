@@ -1,21 +1,50 @@
-@extends('layouts.app')
-@section('title','Error')
-@section('content')
-<div class="container flex flex-col items-center px-6 mx-auto">
-    <svg class="w-12 h-12 mt-8 text-purple-200" fill="currentColor" viewBox="0 0 20 20">
-        <path fill-rule="evenodd"
-            d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
-            clip-rule="evenodd"></path>
-    </svg>
-    <h1 class="text-6xl font-semibold text-gray-700 dark:text-gray-200">
-        404
-    </h1>
-    <p class="text-gray-700 dark:text-gray-300">
-        Page not found. Check the address or
-        <a class="text-purple-600 hover:underline dark:text-purple-300" href="{{ route('home') }}">
-            go back
-        </a>
-        .
-    </p>
-</div>
-@endsection
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head class="h-full">
+
+<body class="h-screen">
+
+    <div class="min-h-full pt-16 pb-12 flex flex-col bg-slate-200">
+        <main class="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex-shrink-0 flex justify-center">
+                <a href="/" class="inline-flex">
+                    <span class="sr-only">Workflow</span>
+                    <img class="h-12 w-auto"
+                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600" alt="">
+                </a>
+            </div>
+            <div class="py-16">
+                <div class="text-center">
+                    <p class="text-sm font-semibold text-indigo-600 uppercase tracking-wide">404 error</p>
+                    <h1 class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Page not found.
+                    </h1>
+                    <p class="mt-2 text-base text-gray-500">Sorry, we couldn’t find the page you’re looking for.</p>
+                    <div class="mt-6">
+                        <a href="{{ route('home') }}"
+                            class="text-base font-medium text-indigo-600 hover:text-indigo-500">Go back
+                            home<span aria-hidden="true"> &rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="flex-shrink-0 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-center space-x-4">
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-600">Contact Support</a>
+                <span class="inline-block border-l border-gray-300" aria-hidden="true"></span>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-600">Status</a>
+                <span class="inline-block border-l border-gray-300" aria-hidden="true"></span>
+                <a href="#" class="text-sm font-medium text-gray-500 hover:text-gray-600">Twitter</a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

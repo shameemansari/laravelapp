@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->string('email')->unique();
             $table->string('status');
-            $table->decimal('amount', 4, 2);
+            $table->double('amount', 8, 2);
             $table->timestamps();
         });
     }
